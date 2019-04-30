@@ -1,0 +1,32 @@
+{
+  "name": "2kabhishek.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2KAbhishek/2kabhishek.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "developer"
+  ],
+  "author": "Abhishek Keshri",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/2KAbhishek/2kabhishek.github.io/issues"
+  },
+  "homepage": "https://github.com/2KAbhishek/2kabhishek.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-wait": "0.0.2"
+  }
+}
