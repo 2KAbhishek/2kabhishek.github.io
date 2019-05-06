@@ -6,6 +6,7 @@ var wait = require('gulp-wait');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 // var imagemin = require('gulp-imagemin');
+const { series } = require('gulp');
 
 gulp.task('scripts', function() {
     return gulp.src('js/scripts.js')
@@ -42,3 +43,5 @@ gulp.task('watch', function() {
     gulp.watch('js/scripts.js', gulp.series('scripts'));
     gulp.watch('scss/styles.scss', gulp.series('styles'));
 });
+
+exports.default = series('styles', 'scripts');
