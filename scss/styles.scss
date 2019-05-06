@@ -302,6 +302,21 @@ footer {
     }
 }
 
+.btn-rounded-blue {
+    display: inline-block;
+    color: $base-color;
+    padding: 15px 25px;
+    border: 3px solid $base-color;
+    border-radius: 30px;
+    @include transition();
+
+    &:hover {
+        color: #fff;
+        background: $base-color;
+        text-decoration: none;
+    }
+}
+
 .shadow {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
