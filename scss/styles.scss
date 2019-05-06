@@ -649,14 +649,14 @@ footer {
 }
 
 .project-image {
-    float: left;
+    vertical-align: middle;
+    margin: 20px;
 }
 
 .project-info {
-    position: absolute;
+    position: relative;
     top: 50%;
-    transform: translateY(-50%);
-    margin-left: 300px;
+    margin: 20px;
     padding: 15px;
 
     h3 {
@@ -965,7 +965,7 @@ footer {
     }
 
     .project-image {
-        display: none;
+        float: left;
     }
 
     .project-info {
