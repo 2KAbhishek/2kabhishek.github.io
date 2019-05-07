@@ -28,7 +28,7 @@
 
 // Define base and accent colors
 $base-color: #3498db;
-$base-color-hover: lighten($base-color, 10%);
+$base-color-hover: darken($base-color, 10%);
 
 // Define background colors
 $background: #232C3B;
@@ -299,7 +299,7 @@ footer {
 
     &:hover {
         color: $base-color;
-        background: white;
+        background:$background;
         text-decoration: none;
     }
 }
@@ -384,7 +384,7 @@ footer {
     h1 {
         color: white;
         font-weight: 900;
-        font-size: 5em;
+        font-size: 3.5em;
         letter-spacing: 0.05em;
         line-height: 0.9em;
     }
@@ -392,7 +392,7 @@ footer {
     h2 {
         color: lighten($base-color, 40%);
         font-weight: 500;
-        font-size: 2.25em;
+        font-size: 2em;
         margin-bottom: 15px;
     }
 }
