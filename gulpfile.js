@@ -42,6 +42,7 @@ gulp.task('styles', function () {
 gulp.task('watch', function() {
     gulp.watch('js/scripts.js', gulp.series('scripts'));
     gulp.watch('scss/styles.scss', gulp.series('styles'));
+    gulp.watch('scss/styles-dark.scss', gulp.series('styles'));
 });
 
 exports.default = series('styles', 'scripts');
