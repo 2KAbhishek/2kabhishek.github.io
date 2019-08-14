@@ -265,7 +265,7 @@ footer {
 }
 
 .social {
-    text-align: right;
+    text-align: center;
 
     ul {
         margin: 5px 0 0 0;
@@ -274,13 +274,13 @@ footer {
 
     li {
         display: inline-block;
-        font-size: 1.25em;
+        font-size: 1.75em;
         list-style: none;
     }
 
     a {
         display: block;
-        color: $text;
+        color: #FFF;
         padding: 10px;
 
         &:hover {
@@ -299,7 +299,7 @@ footer {
 
     &:hover {
         color: $base-color;
-        background:$background;
+        background: $background;
         text-decoration: none;
     }
 }
