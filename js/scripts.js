@@ -82,4 +82,12 @@
         });
     });
 
+    // Change Theme
+    $('#changeTheme').click(function () {
+        light = 'css/styles.css';
+        dark = 'css/styles-dark.css';
+        theme = ($('#css').attr('href')) == light ? dark : light;
+        $('#css').attr('href', theme);
+    });
+
 })(jQuery);
