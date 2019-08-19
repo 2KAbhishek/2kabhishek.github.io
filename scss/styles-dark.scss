@@ -638,7 +638,7 @@ footer {
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    background: $background;
+    background: lighten($background, 5%);
     border-radius: 4px;
 }
 
@@ -707,7 +707,7 @@ footer {
         margin: 7px;
         padding: 5px 10px;
         color: $heading;
-        background: darken($background-alt, 5%);
+        background: lighten($background, 5%);
         list-style: none;
         cursor: default;
         font-size: 1.2em;
