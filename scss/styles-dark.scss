@@ -5,12 +5,12 @@
 */
 
 // Define base and accent colors
-$base-color: #2391E3;
+$base-color: #1688f0;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #232C3B;
-$background-alt: #262F3E;
+$background: #000000;
+$background-alt: #0a0a0a;
 
 // Define border colors
 $border: #dcd9d9;
@@ -143,13 +143,13 @@ header {
 
     a {
         display: block;
-        color: $base-color;
+        color: $text;
         padding: 10px;
 
         &:hover {
-            color: $base-color-hover;
+            color: $text;
             text-decoration: none;
-            background: #eee;
+            background: $base-color;
             border-radius: 4px;
         }
 
@@ -181,7 +181,7 @@ header {
     position: fixed;
     right: 15px;
     top: 10px;
-    color: $base-color;
+    color: $heading;
     font-size: 1.5em;
     z-index: 20;
     padding: 0 7px;
@@ -233,7 +233,7 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($text, 25%);
+        border: 3px solid $base-color;
         text-align: center;
     }
 
@@ -262,7 +262,7 @@ footer {
         padding: 10px;
 
         &:hover {
-            color: $base-color;
+            color: $text;
         }
     }
 }
@@ -294,15 +294,16 @@ footer {
         color: $text;
         background: $base-color;
         text-decoration: none;
+        border: 3px solid $border;
     }
 }
 
 .shadow {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px $base-color, 0 1px 2px $base-color-hover;
 }
 
 .shadow-large {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 6px $base-color, 0 3px 6px $base-color-hover;
 }
 
 .heading {
@@ -359,19 +360,24 @@ footer {
         margin: 0;
     }
 
+    img{
+        border: 5px solid $base-color;
+        border-radius: 50%;
+    }
+
     h1 {
         color: white;
         font-weight: 900;
-        font-size: 3.5em;
+        font-size: 2.5em;
         letter-spacing: 0.05em;
         line-height: 0.9em;
     }
 
     h2 {
-        color: lighten($base-color, 40%);
+        color: $base-color;
         font-weight: 500;
-        font-size: 2em;
-        margin-bottom: 15px;
+        font-size: 1.5em;
+        margin: 10px;
     }
 }
 
@@ -383,7 +389,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    background: rgba($background, 0.8);
     z-index: 1;
 }
 
@@ -404,7 +410,7 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($base-color, 25%);
+        border: 3px solid $base-color;
         text-align: center;
     }
 
@@ -677,7 +683,7 @@ footer {
 }
 
 #more-projects {
-    display: none;
+    display: inline;
 }
 
 /*
@@ -884,7 +890,7 @@ footer {
         top: auto;
 
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
         }
 
         h2 {
