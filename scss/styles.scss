@@ -338,7 +338,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(https://pbs.twimg.com/profile_banners/1043529484182278147/1575667402/1080x360);
+    background: url(../images/lead-bg.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -355,6 +355,11 @@ footer {
     h1,
     h2 {
         margin: 0;
+    }
+
+    img {
+        border: 5px solid $base-color;
+        border-radius: 50%;
     }
 
     h1 {
