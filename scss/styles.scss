@@ -365,7 +365,7 @@ footer {
     h1 {
         color: white;
         font-weight: 900;
-        font-size: 3.5em;
+        font-size: 2.5em;
         letter-spacing: 0.05em;
         line-height: 0.9em;
     }
@@ -373,8 +373,8 @@ footer {
     h2 {
         color: lighten($base-color, 40%);
         font-weight: 500;
-        font-size: 2em;
-        margin-bottom: 15px;
+        font-size: 1.5em;
+        margin: 10px;
     }
 }
 
@@ -887,11 +887,11 @@ footer {
         top: auto;
 
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
         }
 
         h2 {
-            font-size: 1.75em;
+            font-size: 1.5em;
         }
     }
 
