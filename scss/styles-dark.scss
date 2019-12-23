@@ -179,7 +179,7 @@ header {
     display: none;
     cursor: pointer;
     position: fixed;
-    right: 15px;
+    left: 15px;
     top: 10px;
     color: $heading;
     font-size: 1.5em;
@@ -191,11 +191,11 @@ header {
 
 #mobile-menu-close {
     display: none;
-    text-align: right;
+    text-align: left;
     width: 100%;
     background: $background;
     font-size: 1.5em;
-    padding-right: 15px;
+    padding-left: 15px;
     padding-top: 10px;
     cursor: pointer;
     color: $base-color;
