@@ -357,9 +357,11 @@ footer {
         margin: 0;
     }
 
-    img {
+    #me {
         border: 5px solid $base-color;
         border-radius: 50%;
+        height: 250px;
+        width: 250px;
     }
 
     h1 {
