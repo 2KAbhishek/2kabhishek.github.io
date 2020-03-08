@@ -389,7 +389,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-dark 0.8);
+    background: lighten($base-color-dark, 10%);
     z-index: 1;
 }
 
