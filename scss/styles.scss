@@ -5,7 +5,7 @@
 */
 
 // Define base and accent colors
-$base-color: #2391E3;
+$base-color: #2391e3;
 $base-color-dark: #000000;
 $base-color-hover: darken($base-color, 10%);
 
@@ -57,7 +57,7 @@ $text: #74808a;
 */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 16px;
 
     &.active {
@@ -69,7 +69,7 @@ body {
 // No JS styles
 .no-js {
     #experience-timeline {
-        >div {
+        > div {
             background: $background;
             padding: 10px;
             margin-bottom: 10px;
@@ -257,7 +257,7 @@ footer {
 
     a {
         display: block;
-        color: #FFF;
+        color: #fff;
         padding: 10px;
 
         &:hover {
@@ -313,7 +313,7 @@ footer {
 
     &:after {
         position: absolute;
-        content: '';
+        content: "";
         top: 100%;
         height: 1px;
         width: 50px;
@@ -418,7 +418,6 @@ footer {
         animation: pulsate 1.5s ease;
         animation-iteration-count: infinite;
         padding-top: 5px;
-        ;
     }
 }
 
@@ -479,7 +478,7 @@ footer {
 
     &:before {
         position: absolute;
-        content: '';
+        content: "";
         top: 0;
         bottom: 0;
         left: 303px;
@@ -492,11 +491,15 @@ footer {
 
     &:after {
         position: absolute;
-        content: '';
+        content: "";
         width: 3px;
         height: 40px;
         background: $base-color;
-        background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
+        background: linear-gradient(
+            to bottom,
+            $base-color,
+            rgba($base-color, 0)
+        );
         top: 100%;
         left: 303px;
     }
@@ -782,7 +785,8 @@ footer {
         @include transition();
 
         &:hover {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                0 6px 6px rgba(0, 0, 0, 0.23);
         }
     }
 }
@@ -844,14 +848,11 @@ footer {
 
 // Collapse timeline
 @media only screen and (max-width: 750px) {
-
     #experience-timeline {
-
         &:before,
         &:after {
             left: 23px;
         }
-
     }
 
     .vtimeline-date {
@@ -870,12 +871,10 @@ footer {
     .vtimeline-content {
         margin-left: 70px;
     }
-
 }
 
 // Medium Devices
-@media only screen and (max-width : 992px) {
-
+@media only screen and (max-width: 992px) {
     #lead {
         height: auto;
         min-height: auto;
@@ -905,12 +904,10 @@ footer {
             text-align: left;
         }
     }
-
 }
 
 // Small Devices
-@media only screen and (max-width : 768px) {
-
+@media only screen and (max-width: 768px) {
     header {
         position: fixed;
         display: none;
@@ -957,7 +954,6 @@ footer {
     }
 
     .education-block {
-
         h3,
         span {
             float: none;
@@ -983,12 +979,10 @@ footer {
     .social {
         text-align: center;
     }
-
 }
 
 // Extra Small Devices
-@media only screen and (max-width : 480px) {
-
+@media only screen and (max-width: 480px) {
     #lead-content {
         h1 {
             font-size: 1.5em;
@@ -1003,5 +997,4 @@ footer {
             padding: 5px 10px;
         }
     }
-
 }
