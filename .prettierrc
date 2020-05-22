@@ -1,0 +1,13 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "overrides": [
+    {
+      "files": ["*.html", "*.json"],
+      "options": {
+        "tabWidth": 2,
+        "printWidth": 120
+      }
+    }
+  ]
+}
