@@ -862,3 +862,18 @@ footer {
         }
     }
 }
+
+// Light Theme
+
+@media (prefers-color-scheme: light) {
+    // Define background colors
+    $background: #ffffff;
+    $background-alt: #f2f2f5;
+
+    // Define border colors
+    $border: #dcd9d9;
+
+    // Define text colors
+    $heading: #374054;
+    $text: #74808a;
+}
