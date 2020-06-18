@@ -331,8 +331,8 @@ footer {
 
 #lead {
     position: relative;
-    height: 100vh;
-    min-height: 500px;
+    height: auto;
+    min-height: 630px;
     max-height: 1080px;
     background: url(../images/lead-bg.jpg);
     background-size: cover;
@@ -356,8 +356,9 @@ footer {
     #me {
         border: 5px solid $base-color;
         border-radius: 50%;
-        height: 250px;
+        height: auto;
         width: 250px;
+        max-width: 100%;
     }
 
     h1 {
