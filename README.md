@@ -1,5 +1,3 @@
-<div align="center">
-
 # 2kabhishek.github.io
 
 ![Size](https://img.shields.io/github/repo-size/2kabhishek/2kabhishek.github.io?style=plastic&color=0f0&label=Size)
@@ -13,7 +11,6 @@
 This is the source for my personal portfolio site of the same name.
 [Live version](https://2kabhishek.github.io)
 
-</div>
 
 Feel free to fork it for your own use.
 Run `npm install` after clone to install all the required dependencies. Uses `gulp` for task management.
@@ -32,5 +29,4 @@ Run `npm install` after clone to install all the required dependencies. Uses `gu
 
 * Skills - Lists acquired skills and industrial knowledge.
 
-Please consider hitting the ⭐ star button if this repo was useful to you, any contributions and suggestions are welcome.
 
