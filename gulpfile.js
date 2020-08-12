@@ -10,7 +10,7 @@ const { series } = require("gulp");
 
 gulp.task("scripts", function () {
     return gulp
-        .src("js/scripts.js")
+        .src("scripts/scripts.js")
         .pipe(
             plumber(
                 plumber({
@@ -21,31 +21,22 @@ gulp.task("scripts", function () {
                 })
             )
         )
-        .pipe(
-            uglify({
-                output: {
-                    comments: "/^!/",
-                },
-            })
-        )
-        .pipe(
-            rename({
-                extname: ".min.js",
-            })
-        )
-        .pipe(gulp.dest("js"));
+        .pipe(uglify({ output: { comments: "/^!/" } }))
+        .pipe(rename({ extname: ".min.js" }))
+        .pipe(gulp.dest("scripts"));
 });
 
 gulp.task("styles", function () {
     return gulp
-        .src("./scss/*.scss")
+        .src("styles/styles.scss")
         .pipe(wait(250))
         .pipe(
             sass({
                 outputStyle: "compressed",
             }).on("error", sass.logError)
         )
-        .pipe(gulp.dest("./css"));
+        .pipe(rename({ extname: ".css" }))
+        .pipe(gulp.dest("styles"));
 });
 
 // Optimize Images
@@ -56,9 +47,8 @@ gulp.task("styles", function () {
 // );
 
 gulp.task("watch", function () {
-    gulp.watch("js/scripts.js", gulp.series("scripts"));
-    gulp.watch("scss/styles.scss", gulp.series("styles"));
-    gulp.watch("scss/styles-dark.scss", gulp.series("styles"));
+    gulp.watch("scripts/scripts.js", gulp.series("scripts"));
+    gulp.watch("styles/styles.scss", gulp.series("styles"));
 });
 
 exports.default = series("styles", "scripts");
