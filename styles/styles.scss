@@ -504,9 +504,9 @@ footer {
 .vtimeline-content {
     margin-left: 350px;
     background: $background;
-    border: 1px solid #e6e6e6;
+    border: 2px solid $base-color;
     padding: 15px;
-    border-radius: 3px;
+    border-radius: 10px;
     text-align: left;
 
     h3 {
@@ -519,7 +519,7 @@ footer {
 
     h4 {
         font-size: 1.2em;
-        font-weight: 300;
+        font-weight: 400;
         color: #7e8890;
         margin: 0 0 15px 0;
     }
