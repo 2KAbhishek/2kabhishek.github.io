@@ -586,7 +586,8 @@ footer {
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
-    border: 1px solid $border;
+    border: 2px solid $base-color;
+    border-radius: 10px;
     text-align: left;
 
     h3 {
