@@ -508,7 +508,7 @@ footer {
 .vtimeline-content {
     margin-left: 350px;
     background: $background;
-    border: 2px solid $base-color;
+    // border: 2px solid $base-color;
     padding: 15px;
     border-radius: 10px;
     text-align: left;
@@ -590,7 +590,8 @@ footer {
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
-    border: 2px solid $base-color;
+    background: lighten($background, 5%);
+    // border: 2px solid $base-color;
     border-radius: 10px;
     text-align: left;
 
