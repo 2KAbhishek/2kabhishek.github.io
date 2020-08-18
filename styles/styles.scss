@@ -645,6 +645,9 @@ footer {
     max-width: 1280px;
     margin: 0 auto;
     padding: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 600px;
 }
 
 .project {
