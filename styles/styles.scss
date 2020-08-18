@@ -654,6 +654,7 @@ footer {
     border: 2px solid lighten($base-color, 0%);
     border-radius: 10px;
     padding-bottom: 1rem;
+    // max-height: 250px;
 }
 
 .project-image {
@@ -667,20 +668,6 @@ footer {
 //     top: 50%;
 //     margin: 20px;
 //     padding: 15px;
-
-//     h3 {
-//         font-size: 1.5em;
-//         font-weight: 300;
-//         color: $heading;
-//         margin: 0 0 15px 0;
-//     }
-
-//     p {
-//         color: $text;
-//         margin: 0 0 15px 0;
-//         font-size: 0.9em;
-//     }
-// }
 
 // .no-image {
 //     .project-info {
@@ -732,35 +719,8 @@ footer {
     -----------------------------
 */
 
-// Collapse timeline
-@media only screen and (max-width: 750px) {
-    #experience-timeline {
-        &:before,
-        &:after {
-            left: 23px;
-        }
-    }
-
-    .vtimeline-date {
-        width: auto;
-        text-align: left;
-        position: relative;
-        margin-bottom: 15px;
-        display: block;
-        margin-left: 70px;
-    }
-
-    .vtimeline-icon {
-        margin-left: 0;
-    }
-
-    .vtimeline-content {
-        margin-left: 70px;
-    }
-}
-
 // Medium Devices
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1100px) {
     #lead {
         height: auto;
         min-height: auto;
@@ -790,10 +750,13 @@ footer {
             text-align: left;
         }
     }
+    .projects-grid {
+        max-height: 400px;
+    }
 }
 
 // Small Devices
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     header {
         position: fixed;
         display: none;
@@ -839,6 +802,30 @@ footer {
         display: none;
     }
 
+    #experience-timeline {
+        &:before,
+        &:after {
+            left: 23px;
+        }
+    }
+
+    .vtimeline-date {
+        width: auto;
+        text-align: left;
+        position: relative;
+        margin-bottom: 15px;
+        display: block;
+        margin-left: 70px;
+    }
+
+    .vtimeline-icon {
+        margin-left: 0;
+    }
+
+    .vtimeline-content {
+        margin-left: 70px;
+    }
+
     .education-block {
         h3,
         span {
@@ -846,17 +833,21 @@ footer {
         }
     }
 
+    .projects-grid {
+        max-height: 400px;
+    }
+
     .project-image {
         float: left;
     }
 
-    .project-info {
-        position: relative;
-        margin: 0;
-        padding: 30px 15px;
-        top: auto;
-        transform: none;
-    }
+    // .project-info {
+    //     position: relative;
+    //     margin: 0;
+    //     padding: 30px 15px;
+    //     top: auto;
+    //     transform: none;
+    // }
 
     footer {
         text-align: center;
