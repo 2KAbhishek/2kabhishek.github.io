@@ -652,7 +652,8 @@ footer {
 }
 
 .project {
-    border: 2px solid lighten($base-color, 0%);
+    // border: 2px solid lighten($base-color, 0%);
+    background: $background;
     border-radius: 10px;
     padding-bottom: 1rem;
     // max-height: 250px;
