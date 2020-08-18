@@ -60,6 +60,9 @@ body {
     }
 }
 
+a {
+    color: $base-color;
+}
 // No JS styles
 .no-js {
     #experience-timeline {
