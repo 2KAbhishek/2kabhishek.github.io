@@ -712,7 +712,7 @@ footer {
         height: auto;
         min-height: auto;
         max-height: auto;
-        padding: 40px 15px;
+        padding: 80px 20px 60px 20px;
     }
 
     #lead-content {
@@ -730,13 +730,6 @@ footer {
         }
     }
 
-    #about {
-        text-align: center;
-
-        p {
-            text-align: center;
-        }
-    }
     .projects-grid {
         max-height: 400px;
     }
@@ -744,6 +737,13 @@ footer {
 
 // Small Devices
 @media only screen and (max-width: 800px) {
+    #lead {
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+        padding: 40px 20px;
+    }
+
     header {
         position: fixed;
         display: none;
@@ -759,7 +759,7 @@ footer {
     }
 
     #menu {
-        height: 25%;
+        height: auto;
         overflow-y: auto;
         box-shadow: none;
         border-radius: 0;
