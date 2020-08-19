@@ -50,6 +50,7 @@ $text: #dedede;
 
 body {
     font-family: "Lato", sans-serif;
+    margin: 0;
     font-size: 16px;
     background: $background;
     color: $text;
@@ -62,6 +63,7 @@ body {
 
 a {
     color: $base-color;
+    text-decoration: none;
 }
 // No JS styles
 .no-js {
@@ -214,6 +216,7 @@ footer {
     padding-top: 20px;
 
     p {
+        text-align: center;
         margin: 0;
         color: $text;
     }
@@ -430,6 +433,7 @@ footer {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+    text-align: center;
 
     h2 {
         color: $heading;
@@ -607,10 +611,6 @@ footer {
         margin: 0;
         color: $text;
         font-size: 0.9em;
-    }
-
-    ul {
-        padding: 0 0 0 15px;
     }
 
     &:hover {
