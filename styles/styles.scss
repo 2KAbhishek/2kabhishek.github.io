@@ -510,7 +510,6 @@ footer {
 .vtimeline-content {
     margin-left: 350px;
     background: $background;
-    // border: 2px solid $base-color;
     padding: 15px;
     border-radius: 10px;
     text-align: left;
@@ -597,7 +596,6 @@ footer {
     margin: 0 auto 30px auto;
     padding: 15px;
     background: lighten($background, 5%);
-    // border: 2px solid $base-color;
     border-radius: 10px;
     text-align: left;
 
@@ -662,11 +660,9 @@ footer {
 }
 
 .project {
-    // border: 2px solid lighten($base-color, 0%);
     background: $background;
     border-radius: 10px;
     padding-bottom: 1rem;
-    // max-height: 250px;
     &:hover {
         box-shadow: 0 3px 6px $base-color, 0 3px 6px $base-color-hover;
     }
@@ -677,21 +673,6 @@ footer {
     margin: 20px;
     border-radius: 50%;
 }
-
-// .project-info {
-//     position: relative;
-//     top: 50%;
-//     margin: 20px;
-//     padding: 15px;
-
-// .no-image {
-//     .project-info {
-//         position: relative;
-//         margin: 0;
-//         padding: 30px 15px;
-//         transform: none;
-//     }
-// }
 
 /*
     -------------------------------
@@ -866,14 +847,6 @@ footer {
     .project-image {
         float: left;
     }
-
-    // .project-info {
-    //     position: relative;
-    //     margin: 0;
-    //     padding: 30px 15px;
-    //     top: auto;
-    //     transform: none;
-    // }
 
     footer {
         text-align: center;
