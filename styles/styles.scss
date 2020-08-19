@@ -254,11 +254,13 @@ footer {
 
     a {
         display: block;
-        color: #fff;
+        color: $text;
         padding: 10px;
+    }
 
+    i {
         &:hover {
-            color: $text;
+            color: $base-color;
         }
     }
 }
@@ -533,6 +535,10 @@ footer {
         font-size: 0.9em;
         margin: 0;
     }
+
+    &:hover {
+        box-shadow: 0 3px 6px $base-color, 0 3px 6px $base-color-hover;
+    }
 }
 
 .vtimeline-point {
@@ -624,6 +630,10 @@ footer {
     ul {
         padding: 0 0 0 15px;
     }
+
+    &:hover {
+        box-shadow: 0 3px 6px $base-color, 0 3px 6px $base-color-hover;
+    }
 }
 
 /*
@@ -657,6 +667,9 @@ footer {
     border-radius: 10px;
     padding-bottom: 1rem;
     // max-height: 250px;
+    &:hover {
+        box-shadow: 0 3px 6px $base-color, 0 3px 6px $base-color-hover;
+    }
 }
 
 .project-image {
@@ -712,8 +725,11 @@ footer {
         list-style: none;
         cursor: default;
         box-shadow: 0 1px 3px $base-color, 0 1px 2px $base-color-hover;
-        // font-size: 2em;
+        &:hover {
+            box-shadow: 0 3px 6px $base-color, 0 3px 6px $base-color-hover;
+        }
     }
+
     i {
         font-size: 1.2em;
     }
