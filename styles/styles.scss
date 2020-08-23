@@ -245,8 +245,8 @@ footer {
     text-align: center;
 
     ul {
-        margin: 5px 0 0 0;
-        padding: 0;
+        margin: 10px 0px;
+        padding: 20px 0px;
     }
 
     li {
@@ -264,6 +264,7 @@ footer {
     i {
         &:hover {
             color: $base-color;
+            font-size: 1.25em;
         }
     }
 }
