@@ -380,6 +380,35 @@
     </footer>
     <!-- End footer -->
 
+    <!-- Fixes for Firefox and IE -->
+    <script>
+      var isIE = !!window.MSInputMethodContext && !!document.documentMode;
+      var isFirefox = navigator.userAgent.toLowerCase().indexOf("firefox") > -1;
+
+      if (isIE || isFirefox) {
+        var font = document.createElement("link");
+        font.rel = "stylesheet";
+        font.type = "text/css";
+        font.href = "https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap";
+        document.head.appendChild(font);
+        var fontAwesome = document.createElement("link");
+        fontAwesome.rel = "stylesheet";
+        fontAwesome.type = "text/css";
+        fontAwesome.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css";
+        document.head.appendChild(fontAwesome);
+        var devicon = document.createElement("link");
+        devicon.rel = "stylesheet";
+        devicon.type = "text/css";
+        devicon.href = "https://cdnjs.cloudflare.com/ajax/libs/devicon/2.4/devicon.min.css";
+        document.head.append(devicon);
+        var bootstrap = document.createElement("link");
+        bootstrap.rel = "stylesstylesheet";
+        bootstrap.type = "text/css";
+        bootstrap.href = "https://cdnjs.cloudflare.com/ajax/libs/devicon/2.4/devicon.min.css";
+        document.head.append(bootstrap);
+      }
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/scripts.min.js"></script>
   </body>
