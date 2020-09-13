@@ -19,5 +19,5 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: 2KAbhishek/gulp-runner@v0.2
+      - uses: 2KAbhishek/gulp-runner@v0.3
         
