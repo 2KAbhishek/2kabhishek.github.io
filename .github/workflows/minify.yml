@@ -1,23 +1,37 @@
-# This is a basic workflow to help you get started with Actions
+name: Run gulp tasks
 
-name: Minify styles and scripts
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+# Controls when the action will run.
 on:
   push:
-    branches: [ master ]
+    # On which branch
+    branches: ["master"]
+    # On which files
     paths: ["scripts/scripts.js", "styles/styles.scss"]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
+  # Job name
   build:
-    # The type of runner that the job will run on
+    # Runner name
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: 2KAbhishek/gulp-runner@v0.3
-        
+      - uses: actions/checkout@v2
+      # Sets up node
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm ci
+      - run: gulp
+            
+      - name: Commit files
+        run: |
+          git config --local user.name  ${{ github.actor }}
+          git add -A
+          git commit -m "Update gulp output files"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.REPO_GITHUB_TOKEN }}
+          # force: true
