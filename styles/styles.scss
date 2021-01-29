@@ -347,8 +347,8 @@ footer {
 #lead {
     position: relative;
     height: auto;
-    min-height: 630px;
-    max-height: 1080px;
+    min-height: 100vmin;
+    // max-height: 60vmax;
     background: url(../images/lead-bg.jpg);
     background-size: cover;
     padding: 15px;
@@ -372,13 +372,13 @@ footer {
         border: 5px solid $base-color;
         border-radius: 50%;
         height: auto;
-        width: 250px;
-        max-width: 100%;
+        width: 100%;
+        max-width: 250px;
     }
 
     h1 {
         color: white;
-        font-weight: 900;
+        font-weight: 600;
         font-size: 2.5em;
         letter-spacing: 0.05em;
         line-height: 0.9em;
@@ -386,7 +386,7 @@ footer {
 
     h2 {
         color: $base-color;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 1.5em;
         margin: 10px;
     }
