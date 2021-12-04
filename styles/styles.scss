@@ -260,6 +260,8 @@ footer {
 
 .social {
     text-align: center;
+    // Compensates for user agent stylesheet that adds 40px padding
+    margin-right: 40px;
 
     li {
         display: inline-block;
@@ -776,28 +778,6 @@ footer {
 
 // Small Devices
 @media only screen and (max-width: 800px) {
-    .social {
-
-        li {
-            display: inline-block;
-            font-size: 1em;
-            list-style: none;
-        }
-
-        a {
-            display: block;
-            color: $text;
-            padding: 5px;
-        }
-
-        i {
-            &:hover {
-                color: $base-color;
-                font-size: 1.25em;
-            }
-        }
-    }
-
     #lead {
         height: auto;
         min-height: auto;
@@ -836,16 +816,13 @@ footer {
     }
 
     #lead-content {
+        padding: 20px 0px;
         h1 {
             font-size: 2em;
         }
 
         h2 {
             font-size: 1.3em;
-        }
-
-        a {
-            padding: 10px 20px;
         }
     }
 
@@ -900,6 +877,10 @@ footer {
 // Extra Small Devices
 @media only screen and (max-width: 480px) {
     #lead-content {
+        body {
+            font-size: 0.75em;
+        }
+
         h1 {
             font-size: 1.5em;
         }
@@ -909,8 +890,11 @@ footer {
         }
 
         a {
-            font-size: 0.9em;
-            padding: 5px 10px;
+            font-size: 1.25em;
+        }
+
+        #about {
+            padding: 0px;
         }
     }
 }
