@@ -60,7 +60,7 @@ $text: #dedede;
 body {
     font-family: "Lato", sans-serif;
     margin: 0;
-    font-size: 16px;
+    font-size: medium;
     background: $background;
     color: $text;
 
@@ -397,6 +397,8 @@ footer {
         @include drop-shadow(0, 0, 2px);
         height: auto;
         width: calc(30vmin + 10px);
+        min-width: 220px;
+        max-width: 500px;
     }
 
     h1 {
@@ -876,21 +878,7 @@ footer {
 
 // Extra Small Devices
 @media only screen and (max-width: 480px) {
-    #lead-content {
-        body {
-            font-size: 0.75em;
-        }
-
-        h1 {
-            font-size: 1.5em;
-        }
-
-        h2 {
-            font-size: 1em;
-        }
-
-        a {
-            font-size: 1.25em;
-        }
+    .social a {
+        font-size: 1.25em;
     }
 }
