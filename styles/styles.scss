@@ -832,6 +832,12 @@ footer {
         display: none;
     }
 
+    #about {
+        p {
+            text-align: left;
+        }
+    }
+
     #experience-timeline {
         &:before,
         &:after {
