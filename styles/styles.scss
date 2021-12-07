@@ -883,8 +883,9 @@ footer {
 }
 
 // Extra Small Devices
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
     .social a {
-        font-size: 1.25em;
+        font-size: 1.5em;
+        padding: 10px 6px;
     }
 }
