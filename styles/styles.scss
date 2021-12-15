@@ -471,8 +471,11 @@ footer {
     }
 
     p {
+        padding: 10px;
+        text-align: justify;
+        max-width: 80rem;
+        margin: 0 auto;
         color: $text;
-        margin: 0;
     }
 }
 
@@ -830,12 +833,6 @@ footer {
 
     #lead-down {
         display: none;
-    }
-
-    #about {
-        p {
-            text-align: left;
-        }
     }
 
     #experience-timeline {
