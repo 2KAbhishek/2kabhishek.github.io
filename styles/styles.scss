@@ -58,7 +58,7 @@ $text: #dedede;
 */
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     font-size: medium;
     background: $background;
@@ -180,8 +180,6 @@ header {
         position: fixed;
         z-index: 999;
     }
-
-
 }
 
 #menu {
@@ -337,7 +335,7 @@ footer {
 
     &:after {
         position: absolute;
-        content: "";
+        content: '';
         top: 100%;
         height: 1px;
         width: 50px;
@@ -363,13 +361,13 @@ footer {
     height: auto;
     min-height: 100vmin;
     // max-height: 60vmax;
-
 }
 
 #lead::before {
-    content: "";
+    content: '';
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     filter: blur(3px);
@@ -476,6 +474,17 @@ footer {
         max-width: 90rem;
         margin: 0 auto;
         color: $text;
+        a {
+            font-weight: bold;
+            color: $base-color;
+            text-decoration: none;
+        }
+        a:hover {
+            color: darken($base-color, 10%);
+            background: lighten($background, 10%);
+            border: 1px solid $base-color;
+            border-radius: 4px;
+        }
     }
 }
 
@@ -502,7 +511,7 @@ footer {
 
     &:before {
         position: absolute;
-        content: "";
+        content: '';
         top: 0;
         bottom: 0;
         left: 303px;
@@ -515,7 +524,7 @@ footer {
 
     &:after {
         position: absolute;
-        content: "";
+        content: '';
         width: 3px;
         height: 40px;
         background: $base-color;
@@ -710,7 +719,6 @@ footer {
 
     h2 {
         color: $heading;
-        margin-bottom: 50px;
     }
 
     ul {
@@ -739,14 +747,14 @@ footer {
         }
     }
 
-    i {
-        font-size: 1.2em;
-    }
-
     a {
         color: $text;
         text-decoration: none;
         font-size: 1em;
+    }
+
+    i {
+        font-size: 1.2em;
     }
 }
 
