@@ -30,14 +30,12 @@ Run `npm install` after clone to install all the required dependencies. Uses `gu
 
 ## Sections
 
-- Lead - Contains name, designation & other contact links.
+- Lead: Contains name, designation & other contact links.
 
-- About - Contains short description and/or career goals.
+- About: Contains short description and/or career goals.
 
-- Experience - Previous work experiences in chronological order.
+- Experience: Previous work experiences in chronological order.
 
-- Education - Education details in chronological order.
+- Skills: Lists acquired skills and industrial knowledge.
 
-- Projects - Projects undertaken with links to source/live version.
-
-- Skills - Lists acquired skills and industrial knowledge.
+If you are looking for the legacy version with Education and Projects block, check the [legacy branch](https://github.com/2KAbhishek/2kabhishek.github.io/tree/legacy)
