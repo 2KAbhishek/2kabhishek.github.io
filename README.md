@@ -26,16 +26,22 @@ This is the source for my personal portfolio site of the same name.
 [Live version](https://2kabhishek.github.io)
 
 Feel free to fork it for your own use.
-Run `npm install` after clone to install all the required dependencies. Uses `gulp` for task management.
+
+Run `npm install` after clone to install all the required dependencies.
+
+Uses `gulp` for task management, you can either use `npm i -g gulp` or use `npx gulp` to run tasks.
+
+Tasks:
+
+- `gulp styles`: This project uses sass for styling, run `gulp styles` to convert `styles/styles.scss` into minified `styles/styles.css`.
+- `gulp scripts`: Minifies `scripts/scripts.js` into `scripts/scripts.min.js`.
+- `gukp watch`: Actively watch for file changes and run tasks as needed.
 
 ## Sections
 
 - Lead: Contains name, designation & other contact links.
-
 - About: Contains short description and/or career goals.
-
 - Experience: Previous work experiences in chronological order.
-
 - Skills: Lists acquired skills and industrial knowledge.
 
-If you are looking for the legacy version with Education and Projects block, check the [legacy branch](https://github.com/2KAbhishek/2kabhishek.github.io/tree/legacy)
+If you are looking for the legacy version with Education and Projects sections, check the [legacy branch](https://github.com/2KAbhishek/2kabhishek.github.io/tree/legacy)
