@@ -1,4 +1,4 @@
-var TxtType = function (el, toRotate, period) {
+var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -8,7 +8,7 @@ var TxtType = function (el, toRotate, period) {
     this.isDeleting = false;
 };
 
-TxtType.prototype.tick = function () {
+TxtType.prototype.tick = function() {
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
 
@@ -36,12 +36,12 @@ TxtType.prototype.tick = function () {
         delta = 500;
     }
 
-    setTimeout(function () {
+    setTimeout(function() {
         that.tick();
     }, delta);
 };
 
-window.onload = function () {
+window.onload = function() {
     var elements = document.getElementsByClassName('typewriter');
     for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
@@ -57,12 +57,12 @@ window.onload = function () {
     document.body.appendChild(css);
 };
 
-(function ($) {
+(function($) {
     // Remove no-js class
     $('html').removeClass('no-js');
 
     // Animate to section when nav is clicked
-    $('header a').click(function (e) {
+    $('header a').click(function(e) {
         // Treat as normal link if no-scroll class
         if ($(this).hasClass('no-scroll')) return;
 
@@ -72,7 +72,7 @@ window.onload = function () {
 
         $('html, body').animate(
             {
-                scrollTop: scrollDistance + 'px',
+                scrollTop: scrollDistance + 'px'
             },
             Math.abs(window.pageYOffset - $(heading).offset().top) / 1
         );
@@ -84,33 +84,33 @@ window.onload = function () {
     });
 
     // Scroll to top
-    $('#to-top').click(function () {
+    $('#to-top').click(function() {
         $('html, body').animate(
             {
-                scrollTop: 0,
+                scrollTop: 0
             },
             500
         );
     });
 
     // Scroll to first element
-    $('#lead-down span').click(function () {
+    $('#lead-down span').click(function() {
         var scrollDistance = $('#lead').next().offset().top;
         $('html, body').animate(
             {
-                scrollTop: scrollDistance + 'px',
+                scrollTop: scrollDistance + 'px'
             },
             500
         );
     });
 
     // Create timeline
-    $('#experience-timeline').each(function () {
+    $('#experience-timeline').each(function() {
         $this = $(this); // Store reference to this
         $userContent = $this.children('div'); // user content
 
         // Create each timeline block
-        $userContent.each(function () {
+        $userContent.each(function() {
             $(this)
                 .addClass('vtimeline-content')
                 .wrap(
@@ -119,14 +119,14 @@ window.onload = function () {
         });
 
         // Add icons to each block
-        $this.find('.vtimeline-point').each(function () {
+        $this.find('.vtimeline-point').each(function() {
             $(this).prepend(
                 '<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>'
             );
         });
 
         // Add dates to the timeline if exists
-        $this.find('.vtimeline-content').each(function () {
+        $this.find('.vtimeline-content').each(function() {
             var date = $(this).data('date');
             if (date) {
                 // Prepend if exists
@@ -140,12 +140,12 @@ window.onload = function () {
     });
 
     // Open mobile menu
-    $('#mobile-menu-open').click(function () {
+    $('#mobile-menu-open').click(function() {
         $('header, body').addClass('active');
     });
 
     // Close mobile menu
-    $('#mobile-menu-close').click(function () {
+    $('#mobile-menu-close').click(function() {
         $('header, body').removeClass('active');
     });
 })(jQuery);

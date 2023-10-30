@@ -319,11 +319,15 @@ footer {
 }
 
 .shadow {
-    box-shadow: 0 1px 3px $base-color, 0 1px 2px $base-color-hover;
+    box-shadow:
+        0 1px 3px $base-color,
+        0 1px 2px $base-color-hover;
 }
 
 .shadow-large {
-    box-shadow: 0 3px 6px $base-color, 0 3px 6px $base-color-hover;
+    box-shadow:
+        0 3px 6px $base-color,
+        0 3px 6px $base-color-hover;
 }
 
 .heading {
@@ -568,7 +572,9 @@ footer {
 
     &:hover {
         @include transition();
-        box-shadow: 0 3px 6px $base-color, 0 3px 6px $base-color-hover;
+        box-shadow:
+            0 3px 6px $base-color,
+            0 3px 6px $base-color-hover;
         @include drop-shadow();
     }
 }
@@ -637,10 +643,14 @@ footer {
         background: lighten($background, 5%);
         list-style: none;
         cursor: default;
-        box-shadow: 0 1px 6px $base-color, 0 1px 4px $base-color-hover;
+        box-shadow:
+            0 1px 6px $base-color,
+            0 1px 4px $base-color-hover;
         @include transition(0.3s);
         &:hover {
-            box-shadow: 0 3px 6px $base-color, 0 3px 6px $base-color-hover;
+            box-shadow:
+                0 3px 6px $base-color,
+                0 3px 6px $base-color-hover;
             font-weight: bold;
             @include drop-shadow();
             transform: scale(1.1);
