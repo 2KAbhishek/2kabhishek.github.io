@@ -74,7 +74,7 @@ window.addEventListener('load', () => {
             {
                 scrollTop: `${scrollDistance}px`
             },
-            Math.abs(window.pageYOffset - $(heading).offset().top) / 1
+            Math.abs(window.pageYOffset - $(heading).offset().top) / 3
         );
 
         // Hide the menu once clicked if mobile
