@@ -22,26 +22,17 @@
 
 </div>
 
-This is the source for my personal portfolio site of the same name.
-[Live version](https://2kabhishek.github.io)
+This is the source for my personal portfolio site. You can see the [live version here](https://2kabhishek.github.io).
 
 Feel free to fork it for your own use.
 
-Run `npm install` after clone to install all the required dependencies.
+## Tech Stack
 
-Uses `gulp` for task management, you can either use `npm i -g gulp` or use `npx gulp` to run tasks.
-
-Tasks:
-
-- `gulp styles`: This project uses sass for styling, run `gulp styles` to convert `styles/styles.scss` into minified `styles/styles.css`.
-- `gulp scripts`: Minifies `scripts/scripts.js` into `scripts/scripts.min.js`.
-- `gukp watch`: Actively watch for file changes and run tasks as needed.
+This is built with plain HTML, CSS, and JavaScript, with no build process. It uses jQuery for some DOM manipulation and animations.
 
 ## Sections
 
-- Lead: Contains name, designation & other contact links.
-- About: Contains short description and/or career goals.
-- Experience: Previous work experiences in chronological order.
-- Skills: Lists acquired skills and industrial knowledge.
-
-If you are looking for the legacy version with Education and Projects sections, check the [legacy branch](https://github.com/2KAbhishek/2kabhishek.github.io/tree/legacy)
+- **Lead:** Contains name, designation & other contact links.
+- **About:** Contains a short description and/or career goals.
+- **Experience:** Previous work experiences in chronological order.
+- **Skills:** Lists acquired skills and industrial knowledge.
