@@ -54,6 +54,7 @@ a {
     0% {
         transform: translateY(-100%);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -298,7 +299,7 @@ footer {
     width: 100%;
     height: 100%;
     filter: blur(3px);
-    background-image: url(images/bg.jpg);
+    background-image: url(images/bg.webp);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -324,6 +325,7 @@ footer {
     width: calc(30vmin + 10px);
     min-width: 220px;
     max-width: 500px;
+    margin-bottom: 20px;
 }
 
 #lead-content h1 {
@@ -580,12 +582,15 @@ footer {
         min-height: auto;
         padding: 80px 20px 60px 20px;
     }
+
     #lead-content {
         padding: 40px;
     }
+
     #lead-content h1 {
         font-size: 2.5em;
     }
+
     #lead-content h2 {
         font-size: 1.5em;
     }
@@ -596,6 +601,7 @@ footer {
         min-height: auto;
         padding: 40px 20px;
     }
+
     header {
         position: fixed;
         display: none;
@@ -603,40 +609,50 @@ footer {
         bottom: 0;
         height: 100%;
     }
+
     #mobile-menu-open,
     #mobile-menu-close {
         display: block;
     }
+
     #menu {
         overflow-y: auto;
         box-shadow: none;
         border-radius: 0;
         width: 100%;
     }
+
     #menu li {
         display: block;
         margin-bottom: 10px;
         border-bottom: 1px solid #dcd9d9;
     }
+
     #menu li:first-child {
         border-top: 1px solid #dcd9d9;
     }
+
     #lead-content {
         padding: 20px 0px;
     }
+
     #lead-content h1 {
         font-size: 2em;
     }
+
     #lead-content h2 {
         font-size: 1.3em;
     }
+
     #lead-down {
         display: none;
     }
+
     #experience-timeline:before,
     #experience-timeline:after {
         left: 23px;
     }
+
     .vtimeline-date {
         width: auto;
         text-align: left;
@@ -645,12 +661,15 @@ footer {
         display: block;
         margin-left: 70px;
     }
+
     .vtimeline-icon {
         margin-left: 0;
     }
+
     .vtimeline-content {
         margin-left: 70px;
     }
+
     footer {
         text-align: center;
     }
