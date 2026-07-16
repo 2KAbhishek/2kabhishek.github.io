@@ -70,12 +70,7 @@ window.addEventListener('load', () => {
         const heading = $(this).attr('href');
         const scrollDistance = $(heading).offset().top;
 
-        $('html, body').animate(
-            {
-                scrollTop: `${scrollDistance}px`
-            },
-            Math.abs(window.pageYOffset - $(heading).offset().top) / 3
-        );
+        window.scrollTo({top: scrollDistance, behavior: 'smooth'});
 
         // Hide the menu once clicked if mobile
         if ($('header').hasClass('active')) {
