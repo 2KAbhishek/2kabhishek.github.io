@@ -525,6 +525,34 @@ footer {
     color: #dedede;
 }
 
+/* ----- Open Source & Skill Subheading Styles ----- */
+#open-source {
+    padding: 50px 15px;
+    text-align: center;
+    border-bottom: 1px solid #dcd9d9;
+}
+#open-source h2 {
+    color: #efefef;
+}
+#open-source h3 {
+    color: #1688f0;
+    margin: 20px 0 10px 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+#open-source p {
+    color: #dedede;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.skill-subheading {
+    color: #1688f0;
+    margin: 30px 0 15px 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
 /* ----- Skills Styles ----- */
 #skills {
     padding: 50px 15px 20px 15px;
