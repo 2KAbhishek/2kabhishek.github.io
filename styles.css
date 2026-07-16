@@ -1,4 +1,3 @@
-/* ----- Theme Variables ----- */
 @media (prefers-color-scheme: light) {
     :root {
         --bg-main: #ffffff;
@@ -14,6 +13,11 @@
         --shadow-glow-large: 0 3px 6px rgba(22, 136, 240, 0.2), 0 3px 6px rgba(128, 0, 128, 0.2);
         --text-btn-white: #151515;
         --border-btn-white: #151515;
+        --lead-bg-filter: invert(1) blur(3px);
+        --lead-overlay: rgba(255, 255, 255, 0.7);
+        --lead-text: #111111;
+        --header-bg: transparent;
+        --header-text: #ffffff;
     }
 }
 
@@ -32,6 +36,11 @@
         --shadow-glow-large: 0 3px 6px #1688f0, 0 3px 6px #800080;
         --text-btn-white: #ffffff;
         --border-btn-white: #ffffff;
+        --lead-bg-filter: blur(3px);
+        --lead-overlay: rgba(0, 0, 0, 0.8);
+        --lead-text: #ffffff;
+        --header-bg: var(--bg-main);
+        --header-text: var(--text);
     }
 }
 
@@ -112,7 +121,7 @@ header {
 
 header ul {
     display: inline-block;
-    background: var(--bg-main);
+    background: var(--header-bg);
     text-align: center;
     padding: 10px;
     margin: 0;
@@ -131,13 +140,14 @@ header li {
 
 header a {
     display: block;
-    color: var(--text);
+    color: var(--header-text);
     padding: 10px;
 }
 
 header a:hover {
     text-decoration: none;
-    background: #1688f0;
+    background: var(--accent);
+    color: #ffffff;
     border-radius: 4px;
 }
 
@@ -331,7 +341,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    filter: blur(3px);
+    filter: var(--lead-bg-filter);
     background-image: url(images/bg.webp);
     background-size: cover;
     padding: 15px;
@@ -362,7 +372,7 @@ footer {
 }
 
 #lead-content h1 {
-    color: #ffffff;
+    color: var(--lead-text);
     font-weight: 600;
     font-size: 2.5em;
     letter-spacing: 0.05em;
@@ -384,7 +394,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--lead-overlay);
     z-index: 1;
 }
 
@@ -677,6 +687,11 @@ footer {
         box-shadow: none;
         border-radius: 0;
         width: 100%;
+        background: var(--bg-main) !important;
+    }
+
+    #menu a {
+        color: var(--text) !important;
     }
 
     #menu li {
