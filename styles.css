@@ -1,10 +1,47 @@
+/* ----- Theme Variables ----- */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-main: #ffffff;
+        --bg-section: #f0f0f0;
+        --bg-card: #f5f5f5;
+        --text: #151515;
+        --text-heading: #111111;
+        --text-muted: #555555;
+        --accent: #1688f0;
+        --accent-secondary: #800080;
+        --border-color: #dcd9d9;
+        --shadow-glow: 0 1px 3px rgba(22, 136, 240, 0.2), 0 1px 2px rgba(128, 0, 128, 0.2);
+        --shadow-glow-large: 0 3px 6px rgba(22, 136, 240, 0.2), 0 3px 6px rgba(128, 0, 128, 0.2);
+        --text-btn-white: #151515;
+        --border-btn-white: #151515;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-main: #000000;
+        --bg-section: #0a0a0a;
+        --bg-card: #0d0d0d;
+        --text: #dedede;
+        --text-heading: #efefef;
+        --text-muted: #7e8890;
+        --accent: #1688f0;
+        --accent-secondary: #800080;
+        --border-color: #222222;
+        --shadow-glow: 0 1px 3px #1688f0, 0 1px 2px #800080;
+        --shadow-glow-large: 0 3px 6px #1688f0, 0 3px 6px #800080;
+        --text-btn-white: #ffffff;
+        --border-btn-white: #ffffff;
+    }
+}
+
 /* ----- Global Styles ----- */
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     font-size: medium;
-    background: #000000;
-    color: #dedede;
+    background: var(--bg-main);
+    color: var(--text);
 }
 
 body.active {
@@ -18,16 +55,16 @@ a {
 }
 
 .no-js #experience-timeline > div {
-    background: #000000;
+    background: var(--bg-main);
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #dcd9d9;
+    border: 1px solid var(--border-color);
 }
 
 .no-js #experience-timeline > div h3 {
     font-size: 1.5em;
     font-weight: 300;
-    color: #efefef;
+    color: var(--text-heading);
     display: inline-block;
     margin: 0;
 }
@@ -35,12 +72,12 @@ a {
 .no-js #experience-timeline > div h4 {
     font-size: 1.2em;
     font-weight: 300;
-    color: #7e8890;
+    color: var(--text-muted);
     margin-bottom: 15px;
 }
 
 .no-js #experience-timeline > div p {
-    color: #dedede;
+    color: var(--text);
     font-size: 0.9em;
     margin: 0;
 }
@@ -75,7 +112,7 @@ header {
 
 header ul {
     display: inline-block;
-    background: #000000;
+    background: var(--bg-main);
     text-align: center;
     padding: 10px;
     margin: 0;
@@ -94,7 +131,7 @@ header li {
 
 header a {
     display: block;
-    color: #dedede;
+    color: var(--text);
     padding: 10px;
 }
 
@@ -128,19 +165,19 @@ header.sticky {
     position: fixed;
     left: 15px;
     top: 10px;
-    color: #efefef;
+    color: var(--text-heading);
     font-size: 1.5em;
     z-index: 20;
     padding: 0 7px;
     border-radius: 4px;
-    background: #000000;
+    background: var(--bg-main);
 }
 
 #mobile-menu-close {
     display: none;
     text-align: left;
     width: 100%;
-    background: #000000;
+    background: var(--bg-main);
     font-size: 1.5em;
     padding-left: 15px;
     padding-top: 10px;
@@ -168,7 +205,7 @@ footer {
 .copyright p {
     text-align: center;
     margin: 0;
-    color: #dedede;
+    color: var(--text);
 }
 
 .top {
@@ -187,7 +224,7 @@ footer {
 }
 
 .top i {
-    color: #dedede;
+    color: var(--text);
 }
 
 .social {
@@ -203,7 +240,7 @@ footer {
 .social a {
     display: block;
     font-size: 1.75em;
-    color: #dedede;
+    color: var(--text);
     padding: 10px;
 }
 
@@ -216,49 +253,45 @@ footer {
 
 .btn-rounded-white {
     display: inline-block;
-    color: #ffffff;
+    color: var(--text-btn-white);
     padding: 15px 25px;
-    border: 3px solid #ffffff;
+    border: 3px solid var(--text-btn-white);
     border-radius: 30px;
     transition: 0.5s ease all;
 }
 
 .btn-rounded-white:hover {
     color: #1688f0;
-    background: #000000;
+    background: var(--bg-main);
     text-decoration: none;
     filter: drop-shadow(0 0 10px #1688f0);
 }
 
 .btn-rounded-blue {
     display: inline-block;
-    color: #dedede;
+    color: var(--text);
     padding: 15px 25px;
     border: 3px solid #1688f0;
     border-radius: 30px;
-    background: #000000;
+    background: var(--bg-main);
     transition: 0.5s ease all;
 }
 
 .btn-rounded-blue:hover {
-    color: #dedede;
+    color: var(--text);
     background: #1688f0;
     text-decoration: none;
-    border: 3px solid #dcd9d9;
+    border: 3px solid var(--border-color);
     filter: drop-shadow(0 0 10px #1688f0);
     transform: scale(1.1);
 }
 
 .shadow {
-    box-shadow:
-        0 1px 3px #1688f0,
-        0 1px 2px #800080;
+    box-shadow: var(--shadow-glow);
 }
 
 .shadow-large {
-    box-shadow:
-        0 3px 6px #1688f0,
-        0 3px 6px #800080;
+    box-shadow: var(--shadow-glow-large);
 }
 
 .heading {
@@ -282,7 +315,7 @@ footer {
 }
 
 .background-alt {
-    background: #0a0a0a;
+    background: var(--bg-section);
 }
 
 /* ----- Lead Styles ----- */
@@ -363,7 +396,7 @@ footer {
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #dedede;
+    color: var(--text);
 }
 
 #lead-down span {
@@ -384,12 +417,12 @@ footer {
 /* ----- About Styles ----- */
 #about {
     padding: 15px;
-    border-bottom: 1px solid #dcd9d9;
+    border-bottom: 1px solid var(--border-color);
     text-align: center;
 }
 
 #about h2 {
-    color: #efefef;
+    color: var(--text-heading);
 }
 
 #about p {
@@ -397,7 +430,7 @@ footer {
     text-align: center;
     max-width: 90rem;
     margin: 0 auto;
-    color: #dedede;
+    color: var(--text);
 }
 
 #about p a {
@@ -417,11 +450,11 @@ footer {
 #experience {
     padding: 50px 15px;
     text-align: center;
-    border-bottom: 1px solid #dcd9d9;
+    border-bottom: 1px solid var(--border-color);
 }
 
 #experience h2 {
-    color: #efefef;
+    color: var(--text-heading);
 }
 
 #experience-timeline {
@@ -456,7 +489,7 @@ footer {
 
 .vtimeline-content {
     margin-left: 350px;
-    background: #000000;
+    background: var(--bg-main);
     padding: 15px;
     border-radius: 10px;
     text-align: left;
@@ -465,7 +498,7 @@ footer {
 .vtimeline-content h3 {
     font-size: 1.5em;
     font-weight: 300;
-    color: #efefef;
+    color: var(--text-heading);
     display: inline-block;
     margin: 0;
 }
@@ -473,21 +506,19 @@ footer {
 .vtimeline-content h4 {
     font-size: 1.2em;
     font-weight: 400;
-    color: #7e8890;
+    color: var(--text-muted);
     margin-bottom: 15px;
 }
 
 .vtimeline-content p {
-    color: #dedede;
+    color: var(--text);
     font-size: 0.9em;
     margin: 0;
 }
 
 .vtimeline-content:hover {
     transition: 0.5s ease all;
-    box-shadow:
-        0 3px 6px #1688f0,
-        0 3px 6px #800080;
+    box-shadow: var(--shadow-glow-large);
     filter: drop-shadow(0 0 10px #1688f0);
 }
 
@@ -499,7 +530,7 @@ footer {
 
 .vtimeline-icon {
     position: relative;
-    color: #dedede;
+    color: var(--text);
     width: 50px;
     height: 50px;
     background: #1688f0;
@@ -522,17 +553,17 @@ footer {
     left: 0;
     top: 10px;
     font-weight: 300;
-    color: #dedede;
+    color: var(--text);
 }
 
 /* ----- Open Source & Skill Subheading Styles ----- */
 #open-source {
     padding: 50px 15px;
     text-align: center;
-    border-bottom: 1px solid #dcd9d9;
+    border-bottom: 1px solid var(--border-color);
 }
 #open-source h2 {
-    color: #efefef;
+    color: var(--text-heading);
 }
 #open-source h3 {
     color: #1688f0;
@@ -541,7 +572,7 @@ footer {
     font-weight: 400;
 }
 #open-source p {
-    color: #dedede;
+    color: var(--text);
     max-width: 800px;
     margin: 0 auto;
 }
@@ -560,7 +591,7 @@ footer {
 }
 
 #skills h2 {
-    color: #efefef;
+    color: var(--text-heading);
 }
 
 #skills ul {
@@ -574,9 +605,9 @@ footer {
     display: inline-block;
     margin: 7px;
     padding: 5px 10px;
-    color: #efefef;
+    color: var(--text-heading);
     border-radius: 10px;
-    background: #0d0d0d;
+    background: var(--bg-card);
     list-style: none;
     cursor: default;
     box-shadow:
@@ -586,16 +617,14 @@ footer {
 }
 
 #skills li:hover {
-    box-shadow:
-        0 3px 6px #1688f0,
-        0 3px 6px #800080;
+    box-shadow: var(--shadow-glow-large);
     font-weight: bold;
     filter: drop-shadow(0 0 10px #1688f0);
     transform: scale(1.1);
 }
 
 #skills a {
-    color: #dedede;
+    color: var(--text);
     text-decoration: none;
     font-size: 1em;
 }
@@ -653,11 +682,11 @@ footer {
     #menu li {
         display: block;
         margin-bottom: 10px;
-        border-bottom: 1px solid #dcd9d9;
+        border-bottom: 1px solid var(--border-color);
     }
 
     #menu li:first-child {
-        border-top: 1px solid #dcd9d9;
+        border-top: 1px solid var(--border-color);
     }
 
     #lead-content {
