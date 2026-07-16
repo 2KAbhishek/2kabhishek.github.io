@@ -13,11 +13,14 @@
         --shadow-glow-large: 0 3px 6px rgba(22, 136, 240, 0.2), 0 3px 6px rgba(128, 0, 128, 0.2);
         --text-btn-white: #151515;
         --border-btn-white: #151515;
-        --lead-bg-filter: invert(1) blur(3px);
-        --lead-overlay: rgba(255, 255, 255, 0.7);
+        --lead-bg-image: none;
+        --lead-bg-filter: none;
+        --lead-overlay: transparent;
         --lead-text: #111111;
-        --header-bg: transparent;
-        --header-text: #ffffff;
+        --lead-image-shadow: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+        --header-hover-shadow: none;
+        --header-bg: rgba(255, 255, 255, 0.86);
+        --header-text: #151515;
     }
 }
 
@@ -36,9 +39,12 @@
         --shadow-glow-large: 0 3px 6px #1688f0, 0 3px 6px #800080;
         --text-btn-white: #ffffff;
         --border-btn-white: #ffffff;
+        --lead-bg-image: url(images/bg.webp);
         --lead-bg-filter: blur(3px);
         --lead-overlay: rgba(0, 0, 0, 0.8);
         --lead-text: #ffffff;
+        --lead-image-shadow: drop-shadow(0 0 2px #1688f0);
+        --header-hover-shadow: drop-shadow(0 0 10px #1688f0);
         --header-bg: var(--bg-main);
         --header-text: var(--text);
     }
@@ -130,7 +136,7 @@ header ul {
 }
 
 header ul:hover {
-    filter: drop-shadow(0 0 10px #1688f0);
+    filter: var(--header-hover-shadow);
     transition: 0.5s ease all;
 }
 
@@ -154,6 +160,10 @@ header a:hover {
 header a:focus {
     color: #1688f0;
     text-decoration: none;
+}
+
+header a:hover:focus {
+    color: #ffffff;
 }
 
 header.active {
@@ -342,7 +352,7 @@ footer {
     width: 100%;
     height: 100%;
     filter: var(--lead-bg-filter);
-    background-image: url(images/bg.webp);
+    background-image: var(--lead-bg-image);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -353,7 +363,6 @@ footer {
     text-align: center;
     position: relative;
     padding: 30vmin;
-    filter: drop-shadow(0 0 10px #1688f0);
 }
 
 #lead-content h1,
@@ -364,7 +373,7 @@ footer {
 #lead-content #me {
     border: 2px solid #1688f0;
     border-radius: 50%;
-    filter: drop-shadow(0 0 2px #1688f0);
+    filter: var(--lead-image-shadow);
     width: calc(30vmin + 10px);
     min-width: 220px;
     max-width: 500px;
